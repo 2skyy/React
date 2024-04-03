@@ -18,6 +18,10 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <Welcome name="인재" />
+      <Welcome name="인재" />
+      <Welcome name="인재" />
     </div>
   );
 }
