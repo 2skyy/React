@@ -1,27 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
+import NotificationList from "./chapter_06/NotificationList";
+import Counter from "./Counter";
+import FocusButton from "./FocusButton";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          리엑트 프로젝트 Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-
-      <Welcome name="인재" />
-      <Welcome name="인재" />
-      <Welcome name="인재" />
+      <FocusButton />
+      {/* <Counter /> */}
+      {/* <NotificationList /> */}
     </div>
   );
 }

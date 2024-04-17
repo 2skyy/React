@@ -13,7 +13,7 @@ const element = <Welcome name="인재" />;
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <CommentList />
+    <App />
   </React.StrictMode>
 );
 
