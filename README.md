@@ -554,3 +554,20 @@ if 문을 직접 사용하지 않고, 동일한 효과를 내기 위해 && 논�
 5. 이 키는 리스트에서 어떤 아이템이 변경, 추가 또는 제거되었는지 구분하기 위해 사용
 6. 키는 같은 리스트에 있는 엘리먼트 사이에서만 고유한 값이면 됨
 7. 폼은 일반적으로 사용자로부터 입력을 받기위한 양식에서 많이 사용됨
+
+## 5월 29일 강의
+
+# textarea 태그
+
+# File input 태그
+
+이 태그는 그 값이 읽기 전용이기 때문에 리액트에서는 비제어 컴포넌트가 됩니다.
+Input Null Value
+제어 컴포넌트에 value prop을 정해진 값으로 넣으면 코드를 수정하지 않는 한 입력값을 바꿀 수 없습니다.
+만약 value prop 은 넣되 자유롭게 입력할 수 있게 만들고 싶다면 값이 undefined 또는 null을 넣어주면 됩니다.
+
+ReactDom.render(<input value ="hi" />, rootNode);
+
+setTimeout(function() {
+ReactDom.render(<input value={null}/>, rootNode);
+},1000);
